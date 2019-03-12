@@ -1,0 +1,24 @@
+{
+  "name": "multi-container-fib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "redis",
+    "docker",
+    "postgress"
+  ],
+  "author": "Angga Ari Wijaya",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.10",
+    "redis": "^2.8.0"
+  }
+}
