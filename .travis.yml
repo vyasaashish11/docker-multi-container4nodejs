@@ -14,7 +14,7 @@ after_success:
   - docker build -t anggadarkrprince/multi-server ./server
   - docker build -t anggadarkrprince/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push anggadarkrprince/multi-client ./client
-  - docker push anggadarkrprince/multi-nginx ./nginx
-  - docker push anggadarkrprince/multi-server ./server
-  - docker push anggadarkrprince/multi-worker ./worker
+  - docker push anggadarkrprince/multi-client
+  - docker push anggadarkrprince/multi-nginx
+  - docker push anggadarkrprince/multi-server
+  - docker push anggadarkrprince/multi-worker
