@@ -9,10 +9,10 @@ script:
   - docker run anggadarkprince/react-app npm run test -- --coverage
 
 after_success:
-  - docker build anggadarkrprince/multi-client ./client
-  - docker build anggadarkrprince/multi-nginx ./nginx
-  - docker build anggadarkrprince/multi-server ./server
-  - docker build anggadarkrprince/multi-worker ./worker
+  - docker build -t anggadarkrprince/multi-client ./client
+  - docker build -t anggadarkrprince/multi-nginx ./nginx
+  - docker build -t anggadarkrprince/multi-server ./server
+  - docker build -t anggadarkrprince/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push anggadarkrprince/multi-client ./client
   - docker push anggadarkrprince/multi-nginx ./nginx
