@@ -7,7 +7,7 @@ pipeline {
     IMAGE_TAG = "latest"
     EC2_INSTANCE = "65.2.151.51"
     SSH_USER = "ubuntu"
-    SSH_KEY = credentials('ec2forjenkins')
+    SSH_KEY = 'ec2forjenkins'
   }
 
   stages {
